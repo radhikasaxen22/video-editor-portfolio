@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react"
 import { site } from "@/data/site"
 
 const links = [
-  { href: "#reel", label: "Reel" },
+  ...(site.showreel.url ? [{ href: "#reel", label: "Reel" }] : []),
   { href: "#work", label: "Work" },
   { href: "#turnaround", label: "Turnaround" },
   { href: "#process", label: "Process" },

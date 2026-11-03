@@ -58,8 +58,8 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.18 }}
               className="mt-8 flex flex-wrap items-center gap-3"
             >
-              <a href="#reel" className="btn-primary">
-                Watch the reel <ArrowRight size={16} />
+              <a href={site.showreel.url ? "#reel" : "#work"} className="btn-primary">
+                {site.showreel.url ? "Watch the reel" : "See what I edit"} <ArrowRight size={16} />
               </a>
               <a href={mailto} className="btn-outline">
                 <Mail size={16} /> Send a test clip

@@ -4,17 +4,14 @@
 
 export type PosterTone = "amber" | "violet" | "teal" | "rose"
 
-export type WorkItem = {
+export type Deliverable = {
   title: string
-  client: string
   category: string
   role: string
   duration: string
   tools: string[]
-  url: string
   tone: PosterTone
   summary: string
-  placeholder: boolean
 }
 
 export const site = {
@@ -38,7 +35,7 @@ export const site = {
     behance: "",
   },
   showreel: {
-    // TODO: paste a YouTube/Vimeo link. Empty shows the placeholder frame.
+    // Paste a YouTube/Vimeo link. Empty hides the reel section and its nav link.
     // Unlisted YouTube works: https://www.youtube.com/watch?v=XXXXXXXXXXX
     url: "",
     title: "Food edit reel",
@@ -51,59 +48,48 @@ export const site = {
   },
 }
 
-// TODO: replace all four entries with real work. Keep the shape, change the words.
-export const work: WorkItem[] = [
+// Honest specs of the formats delivered — not invented client credits.
+// When real finished edits exist, add them here with a link; the Work grid renders from this list.
+export const deliverables: Deliverable[] = [
   {
-    title: "Recipe reel — 30s hook cut",
-    client: "Creator name",
+    title: "Recipe reel — hook-first cut",
     category: "Short-form",
     role: "Edit · captions · sound",
-    duration: "00:32",
+    duration: "00:20–00:45",
     tools: ["Premiere Pro"],
-    url: "",
     tone: "amber",
     summary:
       "Cold open on the finished dish, then the fastest path to it. Step cards timed to the beat, captions burned in, sizzle left loud.",
-    placeholder: true,
   },
   {
     title: "ASMR / process cut — no voiceover",
-    client: "Creator name",
     category: "Short-form",
     role: "Sound-led edit",
-    duration: "00:48",
+    duration: "00:30–01:00",
     tools: ["Premiere Pro", "Audition"],
-    url: "",
     tone: "rose",
     summary:
       "Knife, pan, pour, plate. Sound design carries it: room tone cleaned, crunch and sizzle lifted, macro beats given room to breathe.",
-    placeholder: true,
   },
   {
-    title: "Cooking tutorial — long-form",
-    client: "Personal website",
+    title: "Tutorial cut — long-form",
     category: "Long-form",
     role: "Story edit · pacing",
-    duration: "14:20",
+    duration: "08:00–20:00",
     tools: ["Premiere Pro"],
-    url: "",
     tone: "teal",
     summary:
       "Relaxed pacing, chapters at each step, ingredient callouts that do not fight the voiceover. Cut from the same footage as the reels.",
-    placeholder: true,
   },
   {
-    title: "Monthly series — 6 reels",
-    client: "Creator name",
+    title: "Monthly series — batch deliverable",
     category: "Series",
     role: "Edit · templating · batch delivery",
     duration: "00:40 avg",
     tools: ["Premiere Pro", "After Effects"],
-    url: "",
     tone: "violet",
     summary:
       "One consistent look across a month: reusable title and caption templates, matched transitions, batch exports named for the upload calendar.",
-    placeholder: true,
   },
 ]
 
