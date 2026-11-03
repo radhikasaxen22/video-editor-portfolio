@@ -15,7 +15,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-surface-dark/80 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-surface-dark/80 backdrop-blur-md print:hidden">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-3 text-sm font-semibold tracking-tight">
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-primary font-mono text-xs font-bold text-[#14100a]">

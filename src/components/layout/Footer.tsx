@@ -10,7 +10,10 @@ export function Footer() {
           © {year} {site.name}. {site.role}.
         </p>
         <p className="font-mono">
-          {site.timezone} · 24h turnaround
+          {site.timezone} · 24h turnaround ·{" "}
+          <a href="print.html" className="underline decoration-white/20 underline-offset-4 hover:text-primary">
+            PDF
+          </a>
         </p>
       </div>
     </footer>

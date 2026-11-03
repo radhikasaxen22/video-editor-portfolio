@@ -186,3 +186,47 @@
 .dark ::-webkit-scrollbar-thumb {
   background-color: color-mix(in srgb, var(--color-text-dark-secondary) 25%, transparent);
 }
+
+@media print {
+  @page { size: A4; margin: 14mm 12mm; }
+
+  html, body { background: #fff !important; color: #111 !important; }
+  main *, footer * { opacity: 1 !important; transform: none !important; }
+
+  header, [aria-hidden="true"] { display: none !important; }
+
+  #top { padding-top: 0 !important; padding-bottom: 1rem !important; }
+  .section-container { max-width: 100% !important; padding: 1rem 0 !important; }
+  .section-title { font-size: 1.5rem !important; margin-bottom: 0.4rem !important; }
+  .section-label { color: #8a6100 !important; }
+  .section-subtitle, p, li, dt, dd { color: #333 !important; }
+
+  .card {
+    background: #fbfaf6 !important;
+    border-color: #ddd6c6 !important;
+    break-inside: avoid;
+  }
+
+  .chip {
+    background: #fdf6e3 !important;
+    border-color: #ead9a8 !important;
+    color: #6b4e00 !important;
+  }
+
+  .text-primary { color: #8a6100 !important; }
+  .text-text-dark, .text-text-dark-secondary { color: #333 !important; }
+
+  .btn-primary, .btn-outline {
+    background: #fff !important;
+    border: 1px solid #d8d2c2 !important;
+    color: #111 !important;
+    box-shadow: none !important;
+  }
+  .btn-primary svg, .btn-outline svg { display: none !important; }
+
+  a { color: #111 !important; text-decoration: none !important; }
+  footer { background: #fff !important; border-color: #e5dfd2 !important; }
+
+  h1, h2, h3, h4 { break-after: avoid; }
+  article, details { break-inside: avoid; }
+}

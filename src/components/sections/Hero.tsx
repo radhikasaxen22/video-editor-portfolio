@@ -87,13 +87,14 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.15 }}
+            className="print:hidden"
           >
             <Timeline />
           </motion.div>
         </div>
       </div>
 
-      <div className="mt-16 overflow-hidden border-y border-white/5 py-3">
+      <div className="mt-16 overflow-hidden border-y border-white/5 py-3 print:hidden">
         <div className="marquee-track">
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center gap-8 pr-8 font-mono text-xs uppercase tracking-[0.2em] text-text-dark-secondary">
@@ -172,7 +173,7 @@ function Timeline() {
         <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-text-dark-secondary/70">
           Cut · caption · handoff
         </span>
-        <span className="chip text-[10]px!">ready for grade</span>
+        <span className="chip text-[10px]!">ready for grade</span>
       </div>
     </div>
   )

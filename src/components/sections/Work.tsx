@@ -22,7 +22,7 @@ export function Work() {
         {deliverables.map((item, index) => (
           <FadeInView key={item.title} delay={index * 0.05}>
             <article className="card group h-full overflow-hidden">
-              <div className="relative aspect-video w-full" style={{ background: toneStyles[item.tone] }}>
+              <div className="relative aspect-video w-full print:hidden" style={{ background: toneStyles[item.tone] }}>
                 <div className="absolute inset-0 flex flex-col justify-between p-4">
                   <div className="flex items-start justify-between gap-3">
                     <span className="chip bg-black/40!">{item.category}</span>

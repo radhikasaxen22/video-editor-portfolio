@@ -21,7 +21,7 @@ export function BackToTop() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-primary text-white shadow-xl shadow-primary/25 hover:shadow-primary/40 transition-shadow cursor-pointer"
+          className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-primary text-white shadow-xl shadow-primary/25 hover:shadow-primary/40 transition-shadow cursor-pointer print:hidden"
         >
           <ArrowUp size={20} />
         </motion.button>

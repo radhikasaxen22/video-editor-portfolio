@@ -18,7 +18,7 @@ export function About() {
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-text-dark-secondary">
                   Photo slot
                 </p>
-                <p className="max-w-[16rem] text-xs leading-relaxed text-text-dark-secondary/70">
+                <p className="max-w-[16rem] text-xs leading-relaxed text-text-dark-secondary/70 print:hidden">
                   Add a well-lit portrait at{" "}
                   <code className="font-mono text-[10px] text-text-dark-secondary">public/portrait.jpg</code>.
                   A face converts better than initials.
