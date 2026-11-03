@@ -20,7 +20,7 @@ export function Showreel() {
       <SectionHeading
         label="Showreel"
         title="Watch this first"
-        subtitle="Ninety seconds of pacing, captions and sound. If the cut does not hold you, nothing else on this page matters."
+        subtitle="A full vlog cut — pacing, captions and cleanup, start to finish. If the edit does not hold you, nothing else on this page matters."
       />
 
       <FadeInView>
@@ -38,7 +38,9 @@ export function Showreel() {
 
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/5 px-4 py-3">
             <span className="text-sm font-medium">{site.showreel.title}</span>
-            <span className="font-mono text-xs text-primary">{site.showreel.duration}</span>
+            {site.showreel.duration && (
+              <span className="font-mono text-xs text-primary">{site.showreel.duration}</span>
+            )}
           </div>
         </div>
       </FadeInView>

@@ -1,4 +1,4 @@
-import { about, commitments, deliverables, process, site, toolGroups } from "@/data/site"
+import { about, commitments, credits, deliverables, process, site, toolGroups } from "@/data/site"
 
 const siteUrl = "radhikasaxen22.github.io/video-editor-portfolio"
 const year = new Date().getFullYear()
@@ -50,6 +50,24 @@ export function PrintPortfolio() {
               <p className="meta">
                 {item.category} · {item.role} · {item.tools.join(", ")}
               </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2>Credits</h2>
+        <div className="grid two">
+          {credits.map((item) => (
+            <div key={item.url} className="format">
+              <div className="format-head">
+                <h3>{item.title}</h3>
+                <span className="mono time">{item.platform}</span>
+              </div>
+              <p className="meta">
+                {item.channel} · {item.role}
+              </p>
+              <p className="meta mono">{item.url.replace("https://", "")}</p>
             </div>
           ))}
         </div>

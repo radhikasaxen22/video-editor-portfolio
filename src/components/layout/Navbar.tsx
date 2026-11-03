@@ -6,6 +6,7 @@ import { site } from "@/data/site"
 const links = [
   ...(site.showreel.url ? [{ href: "#reel", label: "Reel" }] : []),
   { href: "#work", label: "Work" },
+  { href: "#credits", label: "Credits" },
   { href: "#turnaround", label: "Turnaround" },
   { href: "#process", label: "Process" },
   { href: "#about", label: "About" },

@@ -6,6 +6,7 @@ import { BackToTop } from "@/components/shared/BackToTop"
 import { Hero } from "@/components/sections/Hero"
 import { Showreel } from "@/components/sections/Showreel"
 import { Work } from "@/components/sections/Work"
+import { Credits } from "@/components/sections/Credits"
 import { Services } from "@/components/sections/Services"
 import { Turnaround } from "@/components/sections/Turnaround"
 import { Process } from "@/components/sections/Process"
@@ -30,6 +31,7 @@ export default function App() {
           <Hero />
           <Showreel />
           <Work />
+          <Credits />
           <Services />
           <Turnaround />
           <Process />

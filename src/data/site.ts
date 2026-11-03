@@ -37,10 +37,10 @@ export const site = {
   showreel: {
     // Paste a YouTube/Vimeo link. Empty hides the reel section and its nav link.
     // Unlisted YouTube works: https://www.youtube.com/watch?v=XXXXXXXXXXX
-    url: "",
-    title: "Food edit reel",
-    duration: "01:12",
-    note: "60–90 seconds of your fastest, punchiest cuts. This is the first thing a creator watches.",
+    url: "https://youtu.be/qQcbO9rAXKU",
+    title: "Janmashtami vlog — edit for sisterverse.x",
+    duration: "",
+    note: "A full vlog cut: pacing, captions and cleanup. Video opens on YouTube.",
   },
   testEdit: {
     enabled: true,
@@ -90,6 +90,32 @@ export const deliverables: Deliverable[] = [
     tone: "violet",
     summary:
       "One consistent look across a month: reusable title and caption templates, matched transitions, batch exports named for the upload calendar.",
+  },
+]
+
+export type Credit = {
+  platform: string
+  title: string
+  channel: string
+  role: string
+  url: string
+}
+
+// Real pages with work already published. Add a row whenever a new edit goes live.
+export const credits: Credit[] = [
+  {
+    platform: "YouTube",
+    title: "Janmashtami vlog 2026",
+    channel: "sisterverse.x",
+    role: "Vlog edit",
+    url: "https://youtu.be/qQcbO9rAXKU",
+  },
+  {
+    platform: "Instagram",
+    title: "Giggle Edits",
+    channel: "@giggleedits",
+    role: "Short-form edits",
+    url: "https://www.instagram.com/giggleedits/",
   },
 ]
 
