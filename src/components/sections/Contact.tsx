@@ -8,6 +8,7 @@ const socialLabels: { key: keyof typeof site.links; label: string }[] = [
   { key: "youtube", label: "YouTube" },
   { key: "linkedin", label: "LinkedIn" },
   { key: "behance", label: "Behance" },
+  { key: "github", label: "GitHub" },
 ]
 
 export function Contact() {
@@ -65,7 +66,7 @@ export function Contact() {
                       href={site.links[entry.key]}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="chip text-[11]px! hover:!bg-primary/20"
+                      className="chip text-[11px]! hover:!bg-primary/20"
                     >
                       {entry.label}
                     </a>

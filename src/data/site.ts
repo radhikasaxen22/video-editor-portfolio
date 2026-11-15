@@ -29,6 +29,7 @@ export const site = {
   resumeUrl: "",
   links: {
     // TODO: paste real profile URLs. Empty entries are hidden automatically.
+    github: "https://github.com/radhikasaxen22",
     linkedin: "",
     instagram: "",
     youtube: "",
